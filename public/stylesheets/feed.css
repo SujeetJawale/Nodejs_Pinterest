@@ -1,0 +1,105 @@
+*{
+  font-family: 'Gilroy';
+}
+
+h1{
+    font-family: Satisfy;
+    font-size:50px;
+    text-align:center;
+    color:#e60023;
+    padding:10px;
+  }
+  #gallery{
+    -webkit-column-count:4;
+    -moz-column-count:4;
+    column-count:4;
+    
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+  }
+  @media (max-width:1200px){
+    #gallery{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    column-count:3;
+      
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+  }
+  }
+  @media (max-width:800px){
+    #gallery{
+    -webkit-column-count:2;
+    -moz-column-count:2;
+    column-count:2;
+      
+    -webkit-column-gap:20px;
+    -moz-column-gap:20px;
+    column-gap:20px;
+  }
+  }
+  @media (max-width:600px){
+    #gallery{
+    -webkit-column-count:1;
+    -moz-column-count:1;
+    column-count:1;
+  }  
+  }
+  #gallery img,#gallery video {
+    width:100%;
+    height:auto;
+    margin: 4% auto;
+    box-shadow:-3px 5px 15px #000;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .modal-img,.model-vid{
+    width:100%;
+    height:auto;
+  }
+  .modal-body{
+    padding:0px;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  nav {
+    background-color: #e60023; /* Pinterest red color */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .right-buttons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .signup-login, .profile {
+    padding: 10px 15px;
+    background-color: #fff; /* White background */
+    color: #e60023; /* Pinterest red color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .signup-login:hover, .profile:hover {
+    background-color: #f2f2f2; /* Light gray background on hover */
+  }
